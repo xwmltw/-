@@ -46,6 +46,8 @@ typedef NS_ENUM(NSInteger,PersonalBtnTag) {
 - (UIView *)createHeaderView{
     UIView *view = [UIView gradientViewWithColors:@[XColorWithRGB(129, 178, 255),XColorWithRGB(56, 123, 230)] locations:nil startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
     view.frame = CGRectMake(0, 0, self.tableView.width, AdaptationWidth(260));
+
+    
     
     UIButton *backBtn =[[UIButton alloc]init];
     backBtn.tag = PersonalBtnTagBack;
